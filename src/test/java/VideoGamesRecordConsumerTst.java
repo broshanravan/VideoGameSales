@@ -18,7 +18,7 @@ public class VideoGamesRecordConsumerTst {
     public static void Setup() {
 
 
-        String expectedResults =
+        String videoGameJSON =
                 "{\"rank\":1," +
                         "\"name\":\"Wii\"," +
                         "\"year\":\"2006\"," +
@@ -33,8 +33,7 @@ public class VideoGamesRecordConsumerTst {
 
 
 
-        videoGameRecordList.add(expectedResults);
-        //videoGameRecordList.add(videoGameRecord2);
+        videoGameRecordList.add(videoGameJSON);
     }
 
     @Test
