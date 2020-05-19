@@ -1,0 +1,4 @@
+It was decided to implement both parts in a single project where on Class in the project will create the Queue and another class will use it to perform the calculation.
+In this way repeating implementation of common code between the two projects can be avoided
+This will help in synchronisation of the code and avoidance of errors and inconsistencies.
+There are also a few unit tests implemented to test the functionality of a few important methods.
