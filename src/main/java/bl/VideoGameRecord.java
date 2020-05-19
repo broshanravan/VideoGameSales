@@ -8,29 +8,37 @@ public class VideoGameRecord {
     private String platform;
     private String Game;
     private String publisher;
-    private double naSale;
-    private double euSale;
-    private double jpSale;
-    private double otherSales;
-    private double gloableSales;
+    private double NA_Sale;
+    private double EU_Sales;
+    private double JP_Sales;
+    private double Other_Sales;
+    private double Globale_Sales;
 
-    public VideoGameRecord(int rank, String name, String platform, String year,  String game, String publisher, double naSale, double euSale, double jpSale,
-                           double otherSales,double gloableSales) {
+    public VideoGameRecord(int rank, String name, String platform, String year, String game, String publisher, double NA_Sale, double EU_Sales, double JP_Sales,
+                           double Other_Sales, double Globale_Sales) {
         this.rank = rank;
         this.name = name;
         this.year = year;
         this.platform = platform;
         Game = game;
         this.publisher = publisher;
-        this.naSale = naSale;
-        this.euSale = euSale;
-        this.jpSale = jpSale;
-        this.otherSales = otherSales;
-        thisgloableSales = gloableSales
+        this.NA_Sale = NA_Sale;
+        this.EU_Sales = EU_Sales;
+        this.JP_Sales = JP_Sales;
+        this.Other_Sales = Other_Sales;
+        this.Globale_Sales = Globale_Sales;
+    }
+
+    public double getGlobale_Sales() {
+        return Globale_Sales;
+    }
+
+    public void setGlobale_Sales(double globale_Sales) {
+        this.Globale_Sales = globale_Sales;
     }
 
     private double getTotalSales(){
-        double totalSale = naSale + euSale + jpSale + otherSales;
+        double totalSale = NA_Sale + EU_Sales + JP_Sales + Other_Sales;
 
         return totalSale;
     }
@@ -43,36 +51,36 @@ public class VideoGameRecord {
         this.publisher = publisher;
     }
 
-    public double getNaSale() {
-        return naSale;
+    public double getNA_Sale() {
+        return NA_Sale;
     }
 
-    public void setNaSale(double naSale) {
-        this.naSale = naSale;
+    public void setNA_Sale(double NA_Sale) {
+        this.NA_Sale = NA_Sale;
     }
 
-    public double getEuSale() {
-        return euSale;
+    public double getEU_Sales() {
+        return EU_Sales;
     }
 
-    public void setEuSale(double euSale) {
-        this.euSale = euSale;
+    public void setEU_Sales(double EU_Sales) {
+        this.EU_Sales = EU_Sales;
     }
 
-    public double getJpSale() {
-        return jpSale;
+    public double getJP_Sales() {
+        return JP_Sales;
     }
 
-    public void setJpSale(double jpSale) {
-        this.jpSale = jpSale;
+    public void setJP_Sales(double JP_Sales) {
+        this.JP_Sales = JP_Sales;
     }
 
-    public double getOtherSales() {
-        return otherSales;
+    public double getOther_Sales() {
+        return Other_Sales;
     }
 
-    public void setOtherSales(double otherSales) {
-        this.otherSales = otherSales;
+    public void setOther_Sales(double other_Sales) {
+        this.Other_Sales = other_Sales;
     }
 
     public int getRank() {

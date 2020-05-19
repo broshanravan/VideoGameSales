@@ -32,9 +32,10 @@ public class VideoGameCSVReader {
                         Double.parseDouble(gameRecord[6]),
                         Double.parseDouble(gameRecord[7]),
                         Double.parseDouble(gameRecord[8]),
-                        Double.parseDouble(gameRecord[9])
-
+                        Double.parseDouble(gameRecord[9]),
+                      Double.parseDouble(gameRecord[11])
                 );
+
                 videoGamesList.add(videoGameRecord);
             }
             csvReader.close();

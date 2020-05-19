@@ -35,10 +35,10 @@ public class VideoGamesRecordConsumer {
             VideoGameRecord videoGameRecord = getRecordfromJSON(jsonString);
 
             if(year.equalsIgnoreCase(videoGameRecord.getYear())){
-                numberOfSales += videoGameRecord.getNaSale() +
-                        videoGameRecord.getEuSale() +
-                        videoGameRecord.getNaSale() +
-                        videoGameRecord.getOtherSales();
+                numberOfSales += videoGameRecord.getNA_Sale() +
+                        videoGameRecord.getEU_Sales() +
+                        videoGameRecord.getNA_Sale() +
+                        videoGameRecord.getOther_Sales();
             }
 
         }
@@ -65,10 +65,10 @@ public class VideoGamesRecordConsumer {
             VideoGameRecord videoGameRecord = getRecordfromJSON(jsonString);
 
             if(year.equalsIgnoreCase(videoGameRecord.getYear())&&  name.equalsIgnoreCase(videoGameRecord.getName())){
-                numberOfSales += videoGameRecord.getNaSale() +
-                        videoGameRecord.getEuSale() +
-                        videoGameRecord.getNaSale() +
-                        videoGameRecord.getOtherSales();
+                numberOfSales += videoGameRecord.getNA_Sale() +
+                        videoGameRecord.getEU_Sales() +
+                        videoGameRecord.getNA_Sale() +
+                        videoGameRecord.getOther_Sales();
             }
 
         }
