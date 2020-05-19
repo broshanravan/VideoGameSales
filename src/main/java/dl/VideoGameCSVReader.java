@@ -14,6 +14,14 @@ public class VideoGameCSVReader {
 
     final static Logger logger =  LogManager.getLogger(VideoGameCSVReader.class);
 
+    /**
+     * Reads the records from the csv file,
+     * save them inside a videoGameRecordObject
+     * and ad it into a colection to be used by the function creating
+     * JSON Queue
+     * @param sileNamePath
+     * @return
+     */
     public List getVideoGamesListFromCsv(String sileNamePath){
         List<VideoGameRecord> videoGamesList = new LinkedList();
         String row;
@@ -41,6 +49,7 @@ public class VideoGameCSVReader {
             csvReader.close();
         }catch(IOException ioe){
             logger.debug("Error reading the CSV file");
+            logger.debug(ioe.getMessage());
         }
 
 
